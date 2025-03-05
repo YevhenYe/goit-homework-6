@@ -66,6 +66,11 @@ max-width: 320px;
 padding: 0 16px;
 margin: 0 auto;
 }
+.section {
+
+  margin-bottom:96px;
+}
+
 
 @media screen and (min-width:768px){.container {
   max-width: 768px;
@@ -75,6 +80,9 @@ margin: 0 auto;
 .container {
 max-width: 1158px;
 padding: 0 15px;
+}
+.section {
+  padding-bottom: 120px;
 }
 }
 
@@ -354,19 +362,204 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /* SECTION-HERO */
 
-/* @media screen and (min-width: 768px) {
-  .hero-wrap {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(../images/hero-tab-bg.jpg);
-  }
 
-  @media (min-resolution: 2x) {
-    .hero-wrap {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)), url(../images/hero-tab-bg@2x.jpg);
+  
+    
+      .box-pic {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url('../images/people-office-mobile@1x.jpg');
+          background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            width: 100%;
+            padding: 72px 0;
+      }
+      .title-hero{
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        color: #ffffff;
+        max-width: 216px;
+        margin: 0 auto 72px;
+      }
+
+            .btn-hero {
+              background-color: var(--primary-brand);
+              font-weight: 500;
+              line-height: 1.5;
+              letter-spacing: 0.04em;
+              color: #ffffff;
+              display: block;
+              margin: 0 auto;
+              border-radius: 4px;
+              padding: 16px 32px;
+              min-width: 169px;
+              height: 56px;
+              border: none;
+            }
+      
+            .btn{transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+            .btn:hover,
+            .btn:focus {
+              background-color: var(--active-ocean);
+            }
+
+    
+    @media screen and (min-resolution: 2dppx) {
+              .box-pic {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                  url('../images/people-office-mobile@2x.jpg');
+              }
+            }
+  
+  
+    /* Планшет (tablet 1x) */
+    @media screen and (min-width: 768px) {
+      .box-pic {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url('../images/people-office-tab@1x.jpg');
+      }
+            .title-hero{font-size: 56px;
+              line-height: 1.07;
+            max-width: 496px;
+          margin: 0 auto 36px;}
     }
+  
+    /* Планшет Retina (tablet 2x) */
+    @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
+      .box-pic {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url('../images/people-office-tab@2x.jpg');
+      }
+    }
+  
+    /* Десктоп (desktop 1x) */
+    @media screen and (min-width: 1158px) {
+      .box-pic {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url('../images/people-office-desktop@1x.jpeg');
+      max-width: 1440px;
+    padding: 188px 0px;}
+
+          .title-hero {
+          line-height: 1.11;
+          max-width: 496px;
+          margin: 0 auto 48px;
+          }
+    }
+  
+    /* Десктоп Retina (desktop 2x) */
+    @media screen and (min-width: 1158px) and (min-resolution: 2dppx) {
+      .box-pic {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+          url('../images/people-office-desktop@2x.jpg');
+      }
+    }
+
+
+        /* SECTION ADVANDAGES */
+
+.icon-advandages{display: none;}
+
+@media screen and (min-width:768px){}
+
+@media screen and (min-width:1158px){.icon-advandages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 24px 100px; */
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
   }
-} */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* modal window */
 
