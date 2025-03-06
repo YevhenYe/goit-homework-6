@@ -25,29 +25,29 @@
     <header class="page-header">
       <div class="container box-header">
         <nav class="nav-header">
-          <a class="link logo" href="./index.html"
+          <a class="logo" href="./index.html"
             >Web<span class="logo-header">Studio</span></a
           >
 
-          <ul class="list list-nav">
-            <li class="item item-nav">
-              <a class="link link-nav active" href="./index.html">Studio</a>
+          <ul class="list-nav">
+            <li class="item-nav">
+              <a class="link-nav active" href="./index.html">Studio</a>
             </li>
-            <li class="item item-nav">
-              <a class="link link-nav" href="">Portfolio</a>
+            <li class="item-nav">
+              <a class="link-nav" href="">Portfolio</a>
             </li>
-            <li class="item item-nav">
-              <a class="link link-nav" href="">Contacts</a>
+            <li class="item-nav">
+              <a class="link-nav" href="">Contacts</a>
             </li>
           </ul>
         </nav>
         <address class="contacts">
-          <ul class="list list-contacts">
-            <li class="item item-contacts">
-              <a class="link" href="">info@devstudio.com</a>
+          <ul class="list-contacts">
+            <li class="item-contacts">
+              <a class="link-contacts" href="">info@devstudio.com</a>
             </li>
-            <li class="item item-contacts">
-              <a class="link" href="">+11 (000) 111-11-11</a>
+            <li class="item-contacts">
+              <a class="link-contacts" href="">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
@@ -57,6 +57,7 @@
           </svg>
         </button>
       </div>
+
       <div class="mobile-menu">
         <div class="container mobile-menu-container">
           <button class="btn-mobile-menu-close">
@@ -128,35 +129,7 @@
       <!-- секція герой -->
 
       <section class="section section-hero">
-        <div class="container box-pic">
-          <picture>
-            <!-- Десктоп (от 1024px) -->
-            <source
-              srcset="images/desktop-2x.jpg"
-              media="(min-width: 1024px) and (min-resolution: 2dppx)"
-            />
-            <source
-              srcset="images/desktop-1x.jpg"
-              media="(min-width: 1024px)"
-            />
-
-            <!-- Планшет (от 768px) -->
-            <source
-              srcset="images/tablet-2x.jpg"
-              media="(min-width: 768px) and (min-resolution: 2dppx)"
-            />
-            <source srcset="images/tablet-1x.jpg" media="(min-width: 768px)" />
-
-            <!-- Мобильный (до 767px) -->
-            <source
-              srcset="images/mobile-2x.jpg"
-              media="(max-width: 767px) and (min-resolution: 2dppx)"
-            />
-            <source srcset="images/mobile-1x.jpg" media="(max-width: 767px)" />
-
-            <!-- Запасное изображение -->
-            <img src="./images/people-office.jpg" alt="" />
-          </picture>
+        <div class="container box-hero">
           <h1 class="title-hero">Effective Solutions for Your Business</h1>
           <button class="btn btn-hero" type="button">Order Service</button>
         </div>
@@ -174,8 +147,8 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="title">Strategy</h3>
-              <p class="text">
+              <h3 class="title-advandages">Strategy</h3>
+              <p class="text-advandages">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -186,8 +159,8 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="title">Punctuality</h3>
-              <p class="text">
+              <h3 class="title-advandages">Punctuality</h3>
+              <p class="text-advandages">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -198,8 +171,8 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="title">Diligence</h3>
-              <p class="text">
+              <h3 class="title-advandages">Diligence</h3>
+              <p class="text-advandages">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
@@ -210,8 +183,8 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title">Technologies</h3>
-              <p class="text">
+              <h3 class="title-advandages">Technologies</h3>
+              <p class="text-advandages">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -222,7 +195,7 @@
 
       <!-- секція команда -->
 
-      <!-- <section class="section section-team">
+      <section class="section section-team">
         <div class="container box-team">
           <h2 class="title-first">Our Team</h2>
           <ul class="list list-team">
@@ -231,12 +204,16 @@
                 class="pic-team"
                 width="264"
                 height="260"
-                src="./images/team/mark-guerrero.jpg"
-                alt="portrair of mark guerrero"
+                src="./images/team/mark-guerrero@1x.jpg"
+                srcset="
+                  ./images/team/mark-guerrero@1x.jpg 1x,
+                  ./images/team/mark-guerrero@x2.jpg 2x
+                "
+                alt="Portrait of Mark Guerrero"
               />
               <div class="box-name">
-                <h3 class="title title-name">Mark Guerrero</h3>
-                <p class="text text-name">Product Designer</p>
+                <h3 class="title-name">Mark Guerrero</h3>
+                <p class="text-name">Product Designer</p>
                 <ul class="list list-social">
                   <li class="item item-social">
                     <a class="link link-social" href="">
@@ -274,9 +251,14 @@
                 class="pic-team"
                 width="264"
                 height="260"
-                src="./images/team/tom-ford.jpg"
-                alt="portrair of tom ford"
+                src="./images/team/tom-ford@1x.jpg"
+                srcset="
+                  ./images/team/tom-ford@1x.jpg 1x,
+                  ./images/team/tom-ford@2x.jpg 2x
+                "
+                alt="Portrait of Mark Guerrero"
               />
+
               <div class="box-name">
                 <h3 class="title title-name">Tom Ford</h3>
                 <p class="text text-name">Frontend Developer</p>
@@ -317,8 +299,12 @@
                 class="pic-team"
                 width="264"
                 height="260"
-                src="./images/team/camila-garcia.jpg"
-                alt="portrair of camila garcia"
+                src="./images/team/camila-garcia@1x.jpg"
+                srcset="
+                  ./images/team/camila-garcia@1x.jpg 1x,
+                  ./images/team/camila-garcia@2x.jpg 2x
+                "
+                alt="Portrait of Mark Guerrero"
               />
               <div class="box-name">
                 <h3 class="title title-name">Camila Garcia</h3>
@@ -360,7 +346,11 @@
                 class="pic-team"
                 width="264"
                 height="260"
-                src="./images/team/daniel-wilson.jpg"
+                src="./images/team/daniel-wilson@1x.jpg"
+                srcset="
+                  ./images/team/daniel-wilson@1x.jpg 1x,
+                  ./images/team/daniel-wilson@2x.jpg 2x
+                "
                 alt="portrair of daniel wilson"
               />
               <div class="box-name">
@@ -400,11 +390,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- портфоліо -->
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="title-first">Our Portfolio</h2>
           <ul class="list list-portfolio">
@@ -533,7 +523,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- підвал сайту -->
